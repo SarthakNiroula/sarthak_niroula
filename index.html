@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Open Sans", sans-serif;
+			scroll-behavior: smooth;
+			list-style: none;
+			
+		}
+		.icon{
+			display: none;
+		}
+		
+		.header{
+			
+			background: black;
+			width: 100%;
+			height: auto;
+
+		}
+
+		.header .logo{
+			font-weight: bold;
+			font-size: 30px;
+			color:white;
+			padding: 1%;
+			margin-left:2%;
+			 transition:all .9s ease 0s;
+		}
+
+		
+		.header .logo:hover{
+
+			color:red;
+		}
+
+		.header nav ul{
+			text-align: right;
+			font-size: 130%;
+			margin-right: 10%;
+						
+				}
+
+
+		.header nav ul li{
+			display: inline-block;
+			margin-right: 3%;
+			
+		}
+
+		.header nav ul li a:hover{
+			color: blue;
+			transition:all .9s ease 0s;
+		}
+
+
+		.header nav ul li a{
+			text-decoration: none;
+			color:white;
+
+		}
+
+		
+
+		.sano_main{
+			display: flex;
+			flex-direction: row;
+			background-color: rgb(7, 6, 6);
+			margin: 6%;
+			height: 60vh;
+			width: 90vw;
+			justify-content: space-evenly;
+			border: solid grey;
+			border-radius: 100px;
+			box-shadow: 0 0 13px #281b47;
+			
+		}
+
+		.sano_main a {
+			text-decoration: none;
+			color:black;
+		}
+
+		.sano_main .main_content{
+			color: rgb(255, 255, 255);
+			font-size:20px ;
+			align-items: center;
+			display: flex;
+		    justify-content: center;
+			flex-direction: column;
+			
+			
+		}
+
+		.sano_main .main_content .name{
+			color: rgb(219, 100, 45);
+			font-weight: bolder;
+			font-size: 30px;
+			font-style: italic;
+			 
+		}
+
+		.sano_man, .main_content button{
+			color: rgb(0, 0, 0);
+			background: linear-gradient(#ff9968, #ff5e63) no-repeat;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 40px;
+			margin-top: 2%;
+			padding: 3%;	
+		}
+
+		.sano_main img{
+			height: 60vh;
+			
+		}
+
+		.sano_main_2{
+			display: flex;
+			background: radial-gradient(circle at 10% 20%, rgb(239, 246, 249) 0%, rgb(206, 239, 253) 90%);
+			margin-top: 0%;
+			margin: 6%;
+			height: auto;
+			width: 90vw;
+			justify-content: space-around;
+			border: solid grey;
+			border-radius: 100px;
+			box-shadow: 0 0 13px #281b47;
+			
+		}
+
+		.sano_main_2  .hello{
+			color: rgb(219, 100, 45);
+			font-size: 50px;
+			text-align: center;
+			
+		}
+		.sano_main_2 img{
+			
+			width: 27%;
+			margin: 2%;
+			margin-top: 7%;
+			margin-left: 2%;	
+			border: solid wheat;
+			border-radius: 100px;
+			border-style: dashed;
+			box-shadow: 0 0 13px #281b47;
+			border-radius: 120px;
+			
+		}
+
+	    .sano_main_2 img:hover{
+     	    transform:scale(1.09);
+        }
+
+	    .section_3{
+		display: flex;
+		flex-direction: row;
+		margin: 6%;
+		width: 90vw;
+		align-items: center;
+		border: solid transparent;
+		border-radius: 100px;
+		box-shadow: 0 0 13px #281b47;
+		background: linear-gradient(#ff9968, #ff5e63) no-repeat;
+	  }
+
+	  .section_3 img{
+		border: solid ;
+		border-radius: 100px;
+		opacity:82% ;
+		width: 50vw;
+		margin: 20px;
+		box-shadow: 0 0 133px #281b47;
+	  }
+
+	  .contact{
+	
+		border: solid transparent;
+		border-radius: 50px;
+		background:#ffffff;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 0%;
+		margin: 6%;
+		height: auto;
+		width: 50vw;
+		overflow: hidden;
+		box-shadow: 0 0 13px #c2a8ff;
+	  }
+
+	  .contact .title{
+		font-size:40px;
+		font-weight: bold;
+	  }
+	  .contact .input{
+		color: rgb(105, 96, 96); 
+		
+	  }
+
+	  .contact input{
+		border: solid;
+		border-color: #c2a8ff;
+		border-width: 1px;
+		width: 90%; 
+		height: 4vh;
+	  }
+	  .contact textarea{
+		border: solid;
+		border-color: #c2a8ff;
+		border-width: 1px;
+		width: 90%;
+		height: 15vh;
+		max-width: 90%;
+		
+	  }
+	  .contact button{
+		background: rgb(154, 103, 202);
+		border: solid transparent;
+		border-radius: 50px;
+		color: rgb(255, 255, 255);
+		font-size: 100%;
+		width: 50%;
+		height: 50px;
+	  }
+
+	  .about{
+		border: solid transparent;
+		border-radius: 50px;
+		margin: 6%;
+		height: auto;
+		width: 90vw;
+		box-shadow: 0 0 13px #c2a8ff;
+		
+	  }
+
+	  .about .about_title{
+		color:red;
+		font-size: 40px;
+		text-align: center;
+		font-weight: bold;
+
+	  }
+
+	  .about .about_content{
+		color: wheat;
+		background: rgb(0, 0, 0);
+		border: solid transparent;
+		font-weight:bold;
+		font-size: 20px;
+		text-align: justify;
+		padding: 3%;
+	  }
+
+	 
+
+	  .footer {
+		background: black;
+		color: white;
+		height: 10vh;
+	  }
+
+	  .footer p{
+		padding-top: 4vh;
+		text-align: center;
+	  }
+	  .footer p a{
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+	  }
+
+	  .footer p a:hover{
+		color: rgb(236, 154, 0);
+	  }
+
+	  .down_nav{
+		font-size: 100px;
+		color: blue;
+	  }
+
+	  #last{
+		display: none;
+	
+	  }
+
+	  
+
+		/* responsive */
+
+
+		@media screen and (max-width: 465px) {
+			.header{
+				position:relative;
+			}
+		
+			.header .icon{
+				 display: block;
+				float: right;
+				margin-right: 2%;
+				font-size: 30px;
+				
+			}
+			#myDIV{
+				display: none;
+				position: fixed;
+				width: 50%;
+				background-color: #281b47;
+				text-align: center;
+				height: 100vh;
+				transition: all 1s;
+				
+			}
+
+			#last{
+		       display: block;
+		       color: black;
+	           font-size: 50px;
+	        }
+
+			#last:hover{
+		       color:white;
+	        }
+			 
+			.header nav ul li{
+				display: block;	
+				margin: 18%;
+			 }
+
+			.header nav ul li: hover{
+				color: red;
+			}
+	    }
+
+
+     /* first div ko  */
+		@media screen and (max-width: 1048px) {
+
+			 *{
+				margin: 0;
+				padding: 0;
+			  }
+
+			.main .sano_main {
+				display: flex;
+				flex-direction: column;
+				height: auto;
+				padding-top: 8%;
+				justify-content: center;
+					
+			  }
+				
+
+				.main .sano_main .main_content{
+					font-size: 15px;
+					text-align: center;
+					
+				}
+
+				.main .sano_main .name{
+					font-size: 30px;
+				}
+
+				.sano_man, .main_content button{
+
+					padding: 1%;
+					font-size: 15px;
+				}
+
+				
+			 /* First div ko img */
+
+				.main .sano_main img{
+
+					border: solid transparent;
+					margin-top: 10%;
+					margin-bottom: 10%;
+					border-radius: 40%;
+					border-style:dashed;
+					border-color: wheat;
+					height: 1%;
+					width: 33%;
+					/* img lai center of border */
+					display: block; 
+                    margin-left: auto;
+                    margin-right: auto;
+						
+				}  
+			}
+
+
+			@media screen and (max-width: 416px) {
+
+				.sano_main_2 img{
+					text-align: center;
+					border-style: dashed;
+					margin-left: 5%;
+					width: 40%;
+					
+					
+				}
+			}
+
+				@media screen and (max-width: 298px) {
+
+					.sano_main_2 img{
+					display: flex;
+					margin-left: auto;
+					margin-right:auto ;
+					width: 70%;
+					}
+
+
+				}
+
+				@media screen and (max-width: 1000px) {
+					.section_3{
+						display: flex;
+						flex-direction: column;
+					}
+
+					.section_3 .contact {
+						width: 40%;
+					}
+					.section_3 .contact button{
+						width: 80%;
+					}
+
+				}
+
+				@media screen and (max-width: 583px) {
+					.section_3 img{
+						display: none;
+					}
+					
+
+					.section_3 .contact {
+						width: 75%;
+						
+					}
+				
+
+				}
+
+				@media screen and (max-width: 487px) {
+					
+					.about .about_content{
+						font-size: 14px;
+					}
+
+				}
+
+	</style>
+	<!-- sano js hai ): -->
+
+	<script>
+		function clickk(){
+			alert("Sorry!! It is under Maintenance!")
+		}
+
+		function myFunction(){
+		
+			document.getElementById('myDIV').style.display = "block";
+			
+		}
+
+		function disapper(){
+
+			if(screen.width<465){
+		
+		        document.getElementById('myDIV').style.display = "none";
+	
+			}
+	
+        }
+
+		function appear(){
+		
+	        document.getElementById('myDIV').style.display = "none";
+			
+
+		}
+ 
+	</script>
+
+
+	<title>SARTHAK_NIROULA</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="icon" href="port.jfif" type="image/x-icon"/>
+</head>
+<body>
+
+	<div class="header">
+	
+      <nav>	
+	<label class="logo">SARTHAK</label> <!-- label is must . otherwise logo and nav wont come in same line -->
+    	
+	<a href="javascript:void(0);" class="icon" id="press" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	<ul>
+		<div class="mylinks" id="myDIV" onclick="trans()">
+    		<li><a href="#" onclick="disapper()">Home</a></li>
+    		<li><a href="#gallery" onclick="disapper()" >Gallery</a></li>
+			<li><a href="project.html">Projects</a></li>
+    		<li><a href="#contact" onclick="disapper()" >contact</a></li>
+    		<li><a href="#about" onclick="disapper()">About</a></li>
+			<li id="last" onclick="appear()">x</li>
+
+    	</div>
+		</ul>
+    </nav>	
+
+     </div>
+	 
+	 <div class="main">
+
+		<div class="sano_main">
+			<div class="main_content">
+			<div class="hello"> Hello there! It's me</div>
+		    <div class="name"  > Sarthak Niroula </div>
+			<div class="hello">Explorer, computer enthusiast, sports lover</div>
+			<button><a href="#about">Know me more!</a></button>
+			
+			</div>
+			<div class="img" >
+        <img src="port.jfif">
+		</div>
+        </div>
+		
+
+  <!-- Second block -->
+		<div class="sano_main_2" id="gallery">
+			<div class="main_content">
+			<div class="hello"> Gallery
+			</div>
+			
+			<div class="img" >
+        <img src="1.jpg" >
+		<img src="8.jpg" id="nice">
+		<img src="2.jpg" >
+		<img src="4.jpg">
+		<img src="7.jpg" >
+		<img src="6.jpg" >
+		<img src="3.jpg" >
+		<img src="5.jpg" >
+		<img src="9.jpg" >
+		</div>
+
+        </div>
+
+		
+	 </div>
+    	
+
+	 <!-- contact -->
+	 <div class="section_3" id="contact" >
+     <div class="design"><img src="33.jpg"></div>
+	 <div class="contact">
+	
+		<form  style="text-align: center;" action="form.php" method="POST">
+			<div class="title">Contact</div>
+			<hr>
+			<br>
+			<div class="input">
+			Name:<br><input type="text" id="un" name="username"><br>
+			<br>
+			Email:<br><input type="text" id="un" name="password"><br><br>
+			 Your Message:<br>
+			<textarea name="message" ></textarea><br>
+			</div><br>
+			<button type="button" onclick="clickk()">Send Message</button>
+			<br><br>
+
+		</form> 
+	</div>
+
+
+	</div>
+<div class="about" id="about"> <div class="about_title">About</div>
+<div class ="about_content">I love to introduce myself as an inquisitive person.  Academically, I am studying in grade 12. Moreover, I am also engaged on social works. My major hobbies include playing cricket, reading story books, watching mysterious movies, exploring on computer and spending time with mates. Some qualities that I own are hardworking, self-disciplined, innovative and creative. Since I have been involved in different clubs, I have good experience on public speaking and consequence of mutual cooperation. If you would like to know me more, please feel free to contact me via contact form.
+</div>
+
+
+</div>
+
+<div class="footer"> <p><a href="https://www.facebook.com/profile.php?id=100036376145062" target="_blank"  > © Sarthak Niroula</a></p></div>
+
+
+
+
+</body>
+
+</html>
