@@ -70,6 +70,28 @@
                 font-size: 50px;
             }
 
+            .proj{
+                display: flex;
+                flex-direction: row;
+                /* border: solid; */
+                /* align-items: center; */
+                justify-content: center;
+                gap: 10%;
+                margin-top: 10%;
+            }
+
+            img{
+                height: 40vh;
+                width: 100%;
+                border: solid;
+                border-radius: 10%;
+            }
+
+            img:hover{
+                transform: scale(1.2);
+                transition-duration: 1s;
+            }
+
             /* responsive */
             @media screen and (max-width: 826px) {
                
@@ -113,7 +135,13 @@
   
        </div>
 
-      <p>COMING SOON!!!</p>
+       <div class="proj">
+
+       <a href="https://sarthakniroula.github.io/Tic-Tac-Toe/"><img src="tic_tac_toe.jpg"></a>
+       <a href="https://sarthakniroula.github.io/rock_paper_scissor/"><img src="rock_paper_scissor.png"></a>
+       <a href="https://sarthakniroula.github.io/ToDo_list/"><img src="todo_list.jpg"></a>
+       </div>
+     
 
     </body>
 </html>
